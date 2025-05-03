@@ -5,7 +5,9 @@
     "dev": "docker-compose -f docker-compose.dev.yml up --build",
     "dev_up": "docker-compose -f docker-compose.dev.yml up",
     "dev_down": "docker-compose -f docker-compose.dev.yml down",
-    "dev_rm": "docker-compose -f docker-compose.dev.yml down -v"
+    "dev_rm": "docker-compose -f docker-compose.dev.yml down -v",
+    "shell": "node scripts/shell.js",
+    "generate_migration": "docker-compose -f docker-compose.dev.yml exec backend pnpm drizzle-kit generate"
   },
   "packageManager": "pnpm@10.8.0"
 }

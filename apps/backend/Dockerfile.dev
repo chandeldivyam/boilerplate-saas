@@ -28,4 +28,4 @@ WORKDIR /app/apps/backend
 
 # Expose the port the app runs on (as defined in src/index.ts)
 EXPOSE 8000
-CMD ["pnpm", "dev"]
+CMD ["./entrypoint.dev.sh"]
