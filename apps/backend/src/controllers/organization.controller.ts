@@ -6,7 +6,6 @@ import { CreateOrganizationInput } from '@/schemas/organization.schema.js';
  * Handles the creation of a new organization.
  */
 export const createOrganizationHandler = async (
-  // Explicitly type req.body using the validated input type
   req: Request<object, object, CreateOrganizationInput>,
   res: Response,
   next: NextFunction

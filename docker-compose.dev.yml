@@ -52,6 +52,12 @@ services:
       - "3174:3174"
     networks:
       - app_network
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - INTERNAL_API_URL=http://backend:8000
+      - NODE_ENV=development
+    depends_on:
+      - backend
 
 networks:
   app_network:
@@ -59,4 +65,3 @@ networks:
 
 volumes:
   postgres_data:
-  
